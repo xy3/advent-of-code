@@ -1,0 +1,1 @@
+E=8;u=lambda k:list(map(int,__import__('re').findall(r'\d+',k)));o=__import__('sys').stdin.readlines();d,q=o[:E],[[]for i in range(E+1)];[[q[int(o[E][i])-1].append(c)for i, c in enumerate(l)if c.isalpha()]for l in d[::-1]];[[q[u(k)[2]-1].append(q[u(k)[1]-1].pop())for p in range(min(u(k)[0],len(q[u(k)[1]-1])))]for k in o[E+2:]];print("".join([s.pop()for s in q]))
