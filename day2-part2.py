@@ -1,0 +1,1 @@
+print(sum([[0,3][l.split()[1]=="Y"]+[0,6][l.split()[1]=="Z"]+{'A':1,'B':2,'C':3}[[[{'A':'B','B':'C','C':'A'}[l.split()[0]],{'A':'C','B':'A','C':'B'}[l.split()[0]]][l.split()[1]=="X"],l.split()[0]][l.split()[1]=="Y"]]for l in __import__('sys').stdin]))

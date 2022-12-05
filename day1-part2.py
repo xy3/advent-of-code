@@ -1,0 +1,1 @@
+print(sum(sorted(map(lambda g:sum(map(lambda n:int(n.strip()),g.split("\n"))),__import__('sys').stdin.read().split("\n\n")))[-3:]))
