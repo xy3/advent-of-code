@@ -1,0 +1,1 @@
+l=input().strip();print(l.index("".join([g for g in[l[x-14:x]for x in range(len(l))]if len(set(g))==14][0]))+14)
