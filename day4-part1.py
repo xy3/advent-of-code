@@ -1,0 +1,1 @@
+b=lambda o:list(map(int,__import__('re').split("-|,",o.strip())));print(sum((b(l)[0]<=b(l)[2]and b(l)[1]>=b(l)[3])or(b(l)[2]<=b(l)[0]and b(l)[3]>=b(l)[1])for l in __import__('sys').stdin))
