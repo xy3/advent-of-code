@@ -1,0 +1,1 @@
+print(sum([__import__('string').ascii_letters.index(set(g[0]).intersection(set(g[1])).intersection(set(g[2])).pop())+1for g in zip(*(iter(map(str.strip,__import__('sys').stdin.readlines())),)*3)]))

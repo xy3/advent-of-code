@@ -1,0 +1,1 @@
+print(sum([__import__('string').ascii_letters.index(set(x[:len(x)//2]).intersection(set(x[len(x)//2:])).pop())+1for x in __import__('sys').stdin]))
